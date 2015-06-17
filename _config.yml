@@ -6,9 +6,34 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://enoliveira.github.io" # the base hostname & protocol for your site
-github_username:  enikolas
+# url: "http://enoliveira.github.io" # the base hostname & protocol for your site
+url:
 
-# Build settings
+# Owner/author information
+owner:
+  name: Everton Nikolas de Oliveira
+  avatar:
+  bio: "Bacharel em Ciência da Computação, trabalha como programador Java Web, focado em projetos Java EE."
+  email: nikolas.mandaji@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+  github: enikolas
+  stackexchange: https://stackoverflow.com/users/2360413/nikolas-mandaji
+  linkedin: enikolas
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Sao_Paulo
+future: true
+highlighter: pygments
 markdown: kramdown
-encoding: UTF-8
+
+# Amount of posts to show on home page
+paginate: 5
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
