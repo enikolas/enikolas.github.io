@@ -2,8 +2,9 @@
 layout: post
 title:  "Design Patterns: Model-View-Controller"
 date:   2012-04-19 16:32:00
-categories: [Arquitetura, Design Pattern, Java]
+tags: [Arquitetura, Design Pattern, Java]
 ---
+
 **Model-View-Controller** ou simplesmente **MVC**, é um **Design Pattern** que é muito utilizado no universo de aplicações java. O meu primeiro contato com o MVC foi em um projeto desenvolvido para o Banco Votorantin. Este projeto não possuia telas amigáveis para o usuário, pois era executado via linha de comando, mas enfim, com este projeto eu obtive uma boa base de como o MVC funciona em uma aplicação real e neste artigo eu irei compartilhar este meu conhecimento com vocês.
 
 Apesar de a minha primeira experiência ter sido com uma aplicação robô (assim eram chamadas as aplicações Java que eram executadas via linha de comando), o MVC se aplica a outros sistemas, como sistemas java web (seja usando Struts, seja JSF ou mesmo o VRaptor).
@@ -40,7 +41,7 @@ E enfim, vamos a uma explicação mais detalhada sobre a funcionalidade de cada 
 
 A entidade é a parte do seu código que representa as tabelas ou views do seu banco de dados. Aqui eu estou chamando de entidade, mas você pode acabar se deparando com diversos outros nomes, como por exemplo Value Object ou VO, Domain Object ou DO, Data-Transfer Objects ou DTO, entre outros. Em minha pequena experiência de trabalho, já me deparei com todos os citados acima. Apesar de nomenclaturas diferentes, eles exercem o mesmo papel dentro da camada de Entidade: ser um espelho do seu banco de dados.
 
-As entidades são implementadas em java na forma de [JavaBeans](http://pt.wikipedia.org/wiki/JavaBeans), ou seja, possuem as variáveis com acesso privado e proveem um método para o acesso à estas variáveis seguindo os padrões do JavaBeans (getters e setters). De forma geral, cada atributo da sua classe de entidade será equivalente a uma coluna de uma tabela de seu banco de dados, assim como cada classe de entidade será equivalente a uma tabela ou uma view do seu banco de dados. Pensando de forma orientada a objetos, cada instância da sua classe de entidade será equivalente a uma linha da tabela a qual a classe de entidade se espelha.
+As entidades são implementadas em java na forma de [JavaBeans](http://pt.wikipedia.org/wiki/JavaBeans), ou seja, possuem as variáveis com acesso privado e provêem um método para o acesso à estas variáveis seguindo os padrões do JavaBeans (getters e setters). De forma geral, cada atributo da sua classe de entidade será equivalente a uma coluna de uma tabela de seu banco de dados, assim como cada classe de entidade será equivalente a uma tabela ou uma view do seu banco de dados. Pensando de forma orientada a objetos, cada instância da sua classe de entidade será equivalente a uma linha da tabela a qual a classe de entidade se espelha.
 
 
 ## Camada de Persistência
